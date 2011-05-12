@@ -20,7 +20,7 @@ init
 	
 	s: Server
 	try
-		s = new Server("0.0.0.0", 1234)
+		s = new Server("::", 1234)
 		s.start()
 	except err: Error
 		log_die("Can't create server: " + err.message)

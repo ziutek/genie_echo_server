@@ -25,6 +25,8 @@ class Server : Object
 				when SocketFamily.IPV4
 				when SocketFamily.IPV6
 					rem_addr = ((InetSocketAddress) so_addr).address.to_string()
+				when SocketFamily.UNIX
+					rem_addr = ((UnixSocketAddress) so_addr).path
 
 			log_inf("Connection from " + rem_addr)
 			var rd = new DataInputStream(conn.input_stream)

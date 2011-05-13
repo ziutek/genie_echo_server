@@ -27,7 +27,7 @@ syn keyword genieConstant		false null true
 " Exceptions
 syn keyword genieException		try except finally raise
 " Unspecified Statements
-syn keyword genieUnspecifiedStatement	as base construct delete get in is lock new out params ref sizeof set this raises typeof uses value var yield prop print
+syn keyword genieUnspecifiedStatement	as super construct delete get in is lock new out params ref sizeof set this raises typeof uses value var yield prop print
 
 " Comments
 syn cluster genieCommentGroup 		contains=genieTodo

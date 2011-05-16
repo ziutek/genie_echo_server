@@ -11,7 +11,7 @@ syn keyword genieType 			int int8 int16 int32 int64 long short
 syn keyword genieType 			uint uint8 uint16 uint32 uint64 ulong ushort
 syn keyword genieType 			array of dict list
 " Storage keywords
-syn keyword genieStorage		init def class delegate enum exception interface namespace struct final construct
+syn keyword genieStorage		init def class delegate enum exception interface namespace struct
 " repeat / condition / label
 syn keyword genieRepeat			break continue do for for return while
 syn keyword genieConditional		else if case assert
@@ -27,7 +27,7 @@ syn keyword genieConstant		false null true
 " Exceptions
 syn keyword genieException		try except finally raise
 " Unspecified Statements
-syn keyword genieUnspecifiedStatement	as super construct delete get in is lock new out params ref sizeof set this raises typeof uses value var yield prop print
+syn keyword genieUnspecifiedStatement	as super construct final delete get in is lock new out params ref sizeof set this raises typeof uses value var yield prop print
 
 " Comments
 syn cluster genieCommentGroup 		contains=genieTodo

@@ -20,7 +20,7 @@ syn keyword genieLabel			when default
 
 " Modifiers
 syn keyword genieModifier		abstract const dynamic ensures extern inline internal override 
-syn keyword genieModifier 		private protected public requires signal static virtual volatile weak
+syn keyword genieModifier 		private protected public requires event static virtual volatile weak
 syn keyword genieModifier 		async owned unowned
 " Constants
 syn keyword genieConstant		false null true
